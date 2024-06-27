@@ -109,10 +109,43 @@ main{
 #logoFigma{
   animation: cair 2.5s alternate;
 }
+@keyframes extender{
+  0%{
+    transform: translateX(-100%);
+  }
+  70%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+#box{
+  display: flex;
+  flex-direction: column;
+}
 #retangulo1{
   width: 200px;
   height: 110px;
-  background-color: rgb(255, 114, 98, 0.3);
+  background-color: rgb(242, 78, 30, 0.68);
   margin-top:73px;
   position: relative;
+  animation: extender 3s alternate;
+}
+#retangulo2{
+  width: 200px;
+  height: 111px;
+  background-color: rgb(162, 89, 255, 0.53);
+  position: relative;
+  animation: extender 3s alternate;
+}
+#retangulo3{
+  width: 200px;
+  height: 112px;
+  background-color: rgb(10, 207, 131, 0.65) ;
+  position: relative;
+  border-bottom-right-radius: 60px;
+  animation: extender 3s alternate;
 }
